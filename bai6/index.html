@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 6</title>
+</head>
+
+<body>
+    <script>
+        /* 
+           Diện tích hình tròn được tính theo công thức:
+            bình phương bán kính(R) hình tròn nhân với PI(3.14):
+             S = R^2*PI
+             or
+             S = (D^2/4)*PI
+
+           Chu vi hình tròn được tính theo công thức:
+             đường kính(D) nhân với PI hoặc 2 lần bán kính nhân PI.
+             C = 2R*PI
+             or
+             C = D*PI
+
+             S là diện tích HT
+             C là chu vi HT
+             R là bán kính
+             D là đường kính
+        */
+
+        // Nhập đường kính
+        var duongKinh = parseFloat(prompt("Nhập đường kinh:"));
+
+        // Nhập bán kính
+        var banKinh = parseFloat(prompt("Nhập bán kinh:"));
+
+        // Tính chu vi theo công thức
+        var chuVi = (2 * banKinh) * 3.14;
+        var chuVi = duongKinh * 3.14;
+
+        // Tính diện tích theo công thức
+        var dienTich = (banKinh ** 2) * 3.14;
+        var dienTich = (duongKinh ** 2 / 4) * 3.14;
+
+        // Hiển thị kết quả
+        console.log("Bán Kính:" + banKinh);
+        console.log("Đường Kính:" + duongKinh);
+        console.log("Chu Vi Hình Tròn:" + chuVi);
+        console.log("Diện Tích Hình Tròn:" + dienTich);
+
+    </script>
+</body>
+
+</html>

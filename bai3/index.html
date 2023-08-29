@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 3</title>
+</head>
+
+<body>
+    <script>
+        // Nhập điểm sinh viên
+        var vatLy = parseFloat(prompt("Nhập điểm môn vật lý"));
+        var hoaHoc = parseFloat(prompt("Nhập điểm môn hoá học"));
+        var sinhHoc = parseFloat(prompt("Nhập điểm môn sinh học"));
+        /* TÌM HIỂU THÊM
+        Khi nhập điểm từ người dùng bằng hàm prompt và lưu vào các biến vatLy, hoaHoc, và sinhHoc
+         => ĐÂY LÀ KDL String(chuỗi) 
+        Tuy nhiên, khi thực hiện phép cộng tongDiem = vatLy + hoaHoc + sinhHoc;,
+        JavaScript không tự động chuyển đổi chuỗi thành số, 
+        nên nó sẽ thực hiện phép cộng chuỗi thay vì phép cộng số học.
+        Vì vậy cần phải chuyển đổi các chuỗi nhập vào thành số 
+        bằng cách sử dụng hàm parseFloat hoặc parseInt.
+        */
+        // Tính tổng điểm
+        var tongDiem = vatLy + hoaHoc + sinhHoc;
+
+        // Tính điểm trung bình
+        var diemTrungBinh = tongDiem / 3;
+
+        // Hiển thị kết quả
+        console.log("Điểm Vật lý: ", vatLy);
+        console.log("Điểm Hóa học: ", hoaHoc);
+        console.log("Điểm Sinh học: ", sinhHoc);
+        console.log("Tổng điểm: ", tongDiem);
+        console.log("Điểm trung bình: ", diemTrungBinh);
+
+    </script>
+</body>
+
+</html>
